@@ -5,11 +5,13 @@ import "./globals.css";
 const firaHeader = Fira_Code({
   variable: "--fira-header",
   weight: '700',
+  preload: false,
 });
 
 const firaBody = Fira_Code({
   variable: "--fira-body",
   weight: '400',
+  preload: false,
 });
 
 export const metadata: Metadata = {
