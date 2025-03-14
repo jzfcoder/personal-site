@@ -8,7 +8,7 @@ export default function Engineer() {
         cY={2}
         rW={2}
         rH={1}
-        fR={1}
+        fR={2}
         inverse
       />
       <div className='flex-1 flex-col w-3/4 p-5 md:p-20 min-w-100'>
@@ -17,13 +17,8 @@ export default function Engineer() {
         <div className='font-[family-name:var(--fira-body)]'>
             <span className='underline'><a href='http://getclearify.com'>Clearify</a></span>
             <br />
+            An AI-powered eczema tracking app
             <br />
-            Follow my progress:
-            <div className='flex-row space-x-4'>
-              <span>linkedin</span>
-              <span>github</span>
-              <span>email</span>
-            </div>
             <br />
             <span className='underline'><a href='/'>Return to Home</a></span>
         </div>
