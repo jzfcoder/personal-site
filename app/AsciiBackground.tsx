@@ -2,7 +2,16 @@
 import React, { useEffect, useRef } from 'react';
 import { createNoise4D } from 'simplex-noise';
 
-const AsciiBackground: React.FC = () => {
+export type AsciiProps = {
+  inverse?: boolean
+  cX?: number,
+  cY?: number,
+  rW?: number,
+  rH?: number,
+  fR?: number,
+}
+
+const AsciiBackground: React.FC<AsciiProps> = ({ inverse, cX=2, cY=2, rW=5, rH=5, fR=2 }: AsciiProps) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -26,11 +35,11 @@ const AsciiBackground: React.FC = () => {
     const charArray = characters.split('');
     let time = 0;
 
-    const centerX = () => canvas.width / 2;
-    const centerY = () => canvas.height / 2;
-    const rectWidth = () => canvas.width / 5;
-    const rectHeight = () => canvas.height / 5;
-    const fadeRadius = () => Math.min(canvas.width, canvas.height) / 2; // Adjust this value to control the fade radius
+    const centerX = () => canvas.width / cX;
+    const centerY = () => canvas.height / cY;
+    const rectWidth = () => canvas.width / rW;
+    const rectHeight = () => canvas.height / rH;
+    const fadeRadius = () => Math.min(canvas.width, canvas.height) / fR;
 
     const render = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -51,8 +60,12 @@ const AsciiBackground: React.FC = () => {
 
           // Adjust brightness based on distance
           const fadeFactor = Math.min(1, distance / fadeRadius());
-          const adjustedBrightness = brightness * (1 - fadeFactor);
-        //   const adjustedBrightness = brightness * (fadeFactor);
+          let adjustedBrightness = 1
+          if (inverse) {
+            adjustedBrightness = brightness * fadeFactor;
+          } else {
+            adjustedBrightness = brightness * (1 - fadeFactor);
+          }
 
           ctx.fillStyle = `rgb(${adjustedBrightness}, ${adjustedBrightness}, ${adjustedBrightness})`;
           ctx.fillText(char, x, y + 20); // Adjust position to match font size

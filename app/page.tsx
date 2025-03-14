@@ -8,7 +8,7 @@ export default function Home() {
       <br />
       <p className='flex flex-row space-x-4 font-[family-name:var(--fira-body)]'>
         <span className='underline-animation delay-1'><a href='portfolio'>Engineer.</a></span>
-        <span className='underline-animation delay-2'><a href='projects'>Entrepreneur.</a></span>
+        <span className='underline-animation delay-2'><a href='building'>Entrepreneur.</a></span>
         <span className='underline-animation delay-3'><a href="https://zflint.com">Explorer.</a></span>
       </p>
     </div>
