@@ -10,7 +10,7 @@ export default function Home() {
       <p className='flex flex-row space-x-4 font-[family-name:var(--fira-body)]'>
         <span className='underline-animation delay-1'><a href='portfolio'>Engineer.</a></span>
         <span className='underline-animation delay-2'><a href='building'>Entrepreneur.</a></span>
-        <span className='underline-animation delay-3'><a href="https://zflint.com">Explorer.</a></span>
+        <span className='underline-animation delay-3'><a target="_blank" href="https://zflint.com">Explorer.</a></span>
       </p>
       <div className='fixed bottom-4 w-full flex justify-center space-x-4'>
         <a href='https://www.linkedin.com/in/jeremy-z-flint' target='_blank' rel='noopener noreferrer'>
