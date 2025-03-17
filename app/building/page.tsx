@@ -15,7 +15,7 @@ export default function Engineer() {
         <h1 className='text-5xl md:text-6xl font-[family-name:var(--fira-header)]'>Currently Building...</h1>
         <br />
         <div className='font-[family-name:var(--fira-body)]'>
-            <span className='underline'><a href='http://getclearify.com'>Clearify</a></span>
+            <span className='underline'><a target="_blank" href='http://getclearify.com'>Clearify</a></span>
             <br />
             An AI-powered eczema tracking app
             <br />
