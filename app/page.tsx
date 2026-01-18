@@ -28,21 +28,21 @@ export default function Home() {
           <h1 className='text-5xl'>Jeremy Flint</h1>
           <p className='mt-4 max-w-md'>
             I'm on leave as a sophomore at MIT, currently building agents and benchmarking infrastructure
-            at <span className='underline-animation delay-1'><a href='https://tryshortcut.ai' target='_blank'>Shortcut</a></span> by <span className='underline-animation delay-2'><a href='https://fundamentalresearchlabs.ai' target='_blank'>Fundamental Research.</a></span>
+            at <span className='underline'><a href='https://tryshortcut.ai' target='_blank'>Shortcut</a></span> by <span className='underline'><a href='https://fundamentalresearchlabs.ai' target='_blank'>Fundamental Research.</a></span>
           </p>
           <p className='mt-4 max-w-md'>
             I plan on returning to MIT in Spring 2026 to continue studying AI & Decision Making. I'm interested in helping shape a future where humans and AI safely coexist.
           </p>
           <p className='mt-4 max-w-md'>
-            You can find some of the things I've built <span className='underline-animation delay-3'><a href='/portfolio' target='_blank'>here.</a></span>
+            You can find some of the things I've built <span className='underline'><a href='/portfolio' target='_blank'>here.</a></span>
           </p>
           <p className='mt-4 max-w-md'>
             Most recently, I started
-            an <span className='underline-animation delay-4'><a href='https://www.getclearify.com' target='_blank'>AI-powered skincare app</a></span> and
-            joined <span className='underline-animation delay-5'><a href='https://www.linkedin.com/company/stitch-ai/' target='_blank'>Stitch</a></span> to design a graph-based LLM interface.
+            an <span className='underline'><a href='https://www.getclearify.com' target='_blank'>AI-powered skincare app</a></span> and
+            joined <span className='underline'><a href='https://www.linkedin.com/company/stitch-ai/' target='_blank'>Stitch</a></span> to design a graph-based LLM interface.
           </p>
           <p className='mt-4 max-w-md'>
-            I also enjoy <span className='underline-animation delay-6'><a href='https://mitathletics.com/sports/mens-swimming-and-diving' target='_blank'>swimming</a></span> and
+            I also enjoy <span className='underline'><a href='https://mitathletics.com/sports/mens-swimming-and-diving' target='_blank'>swimming</a></span> and
             skateboarding in my spare time.
           </p>
         </div>
