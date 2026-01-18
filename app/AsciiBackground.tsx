@@ -67,7 +67,8 @@ const AsciiBackground: React.FC<AsciiProps> = ({ inverse, cX=2, cY=2, rW=5, rH=5
             adjustedBrightness = brightness * (1 - fadeFactor);
           }
 
-          ctx.fillStyle = `rgb(${adjustedBrightness}, ${adjustedBrightness}, ${adjustedBrightness})`;
+          const invertedBrightness = 255 - adjustedBrightness;
+          ctx.fillStyle = `rgb(${invertedBrightness}, ${invertedBrightness}, ${invertedBrightness})`;
           ctx.fillText(char, x, y + 20); // Adjust position to match font size
         }
       }

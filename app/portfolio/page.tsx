@@ -40,7 +40,7 @@ export default function Engineer() {
   const projects: Project[] = Projects();
 
   return (
-    <div className='flex flex-col h-screen text-center items-center justify-center min-h-screen py-2 text-white'>
+    <div className='flex flex-col h-screen text-center items-center justify-center min-h-screen py-2 text-black'>
       <AsciiBackground
         cX={2}
         cY={2}
