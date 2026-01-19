@@ -61,6 +61,7 @@ function ProjectItem({ project, onClick }: ProjectProps) {
     </div>
   );
 }
+// hello
 
 export default function Portfolio() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
