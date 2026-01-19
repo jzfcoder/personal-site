@@ -26,17 +26,38 @@ function formatDate(date: Date) {
 function ProjectItem({ project, onClick }: ProjectProps) {
   return (
     <div
-      className='relative flex w-full max-w-2xl justify-center items-start p-4 my-3 min-w-[300px] transform transition-transform duration-300 hover:scale-105 box cursor-pointer'
+      className='relative flex w-full max-w-2xl items-center p-4 min-w-[300px] transition-colors duration-200 hover:bg-gray-50 cursor-pointer border-b border-gray-200 last:border-b-0'
       onClick={onClick}
     >
       <div className='flex-1 text-left'>
-        <div className='text-xl font-[family-name:var(--fira-header)] mb-2'>
+        <div className='text-xl mb-1'>
           {project.title}
         </div>
-        <p className='font-[family-name:var(--fira-body)]'>
+        <p className='text-sm text-gray-600'>
           {formatDate(project.date)} | {project.caption}
+          {project.githubUrl && (
+            <>
+              {' | '}
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:opacity-70"
+                onClick={(e) => e.stopPropagation()}
+              >
+                GitHub
+              </a>
+            </>
+          )}
         </p>
       </div>
+      {project.coverPhoto && (
+        <img
+          src={project.coverPhoto}
+          alt={project.title}
+          className='w-16 h-16 object-cover ml-4 flex-shrink-0'
+        />
+      )}
     </div>
   );
 }
@@ -45,22 +66,24 @@ export default function Portfolio() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
-    <div className='flex flex-col h-screen text-center items-center justify-center min-h-screen py-2 text-black'>
+    <div className='min-h-screen text-center text-black overflow-y-auto'>
       <AsciiBackground />
-      <div className='flex-1 flex flex-col items-center w-full p-5 md:p-20 overflow-y-auto'>
-        <h1 className='text-5xl md:text-6xl font-[family-name:var(--fira-header)]'>Portfolio</h1>
-        <div className='font-[family-name:var(--fira-body)]'>
-          <span className='underline'><a href='/'>Return to Home</a></span>
-        </div>
-        <br />
-        <div className='w-full flex flex-col items-center'>
-          {projects.map((project) => (
-            <ProjectItem
-              project={project}
-              key={project.title}
-              onClick={() => setSelectedProject(project)}
-            />
-          ))}
+      <div className='relative z-10 flex flex-col items-center min-h-screen'>
+        <div className='w-full max-w-2xl bg-white min-h-screen p-5 md:p-20'>
+          <h1 className='text-5xl'>Portfolio</h1>
+          <div>
+            <span className='underline'><a href='/'>Return to Home</a></span>
+          </div>
+          <br />
+          <div className='w-full'>
+            {projects.map((project) => (
+              <ProjectItem
+                project={project}
+                key={project.title}
+                onClick={() => setSelectedProject(project)}
+              />
+            ))}
+          </div>
         </div>
       </div>
 

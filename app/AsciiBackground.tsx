@@ -51,12 +51,15 @@ const AsciiBackground: React.FC = () => {
       previousBuffer = buffer2;
       prevChars = new Uint8Array(size);
       prevChars.fill(255); // Force full redraw
+
+      // Reset canvas state after resize (canvas resize clears context state)
+      ctx.font = `${CELL_SIZE}px monospace`;
+      ctx.textBaseline = 'top';
+      ctx.fillStyle = '#ffffff';
+      ctx.fillRect(0, 0, width, height);
     };
 
     resizeCanvas();
-
-    ctx.font = `${CELL_SIZE}px monospace`;
-    ctx.textBaseline = 'top';
 
     const addDrop = (x: number, y: number, radius: number, strength: number) => {
       const gridX = Math.floor(x / CELL_SIZE);
@@ -188,10 +191,6 @@ const AsciiBackground: React.FC = () => {
       timeRef.current += 0.001;
       frameRef.current = requestAnimationFrame(render);
     };
-
-    // Initial clear
-    ctx.fillStyle = '#ffffff';
-    ctx.fillRect(0, 0, width, height);
 
     render();
 
