@@ -25,6 +25,22 @@ Tech Stack: Next.js, React, Supabase, GCP, Modal, Vector Embeddings`,
     pdfUrl: undefined,
   },
   {
+    title: 'Dead Internet Simulator',
+    date: new Date('06/17/2025'),
+    caption: 'autonomous agents in a simulated social network',
+    description: `A simulation where autonomous agents post, comment, and vote in a private Reddit-like environment. Agents develop evolving memory as others respond to their content, revealing emergent social dynamics.
+
+• OpenAI proxy and agent system
+• Simulation runner infrastructure
+• Response parsing
+
+Built in 6 hours at YC AI Sus 2025.
+
+Tech Stack: TypeScript, Next.js, Tailwind CSS`,
+    githubUrl: 'https://github.com/andrewcyuan/dead-internet-theory',
+    pdfUrl: undefined,
+  },
+  {
     title: 'DreamCatcher',
     date: new Date('01/01/2025'),
     caption: 'sleep talking recorder',
