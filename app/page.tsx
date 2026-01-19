@@ -50,10 +50,10 @@ export default function Home() {
             at <span className='underline'><a href='https://tryshortcut.ai' target='_blank'>Shortcut</a></span> by <span className='underline'><a href='https://fundamentalresearchlabs.ai' target='_blank'>Fundamental Research.</a></span>
           </p>
           <p className='mt-4 max-w-md'>
-            I plan on returning to MIT in Spring 2026 to continue studying AI & Decision Making. I'm interested in helping shape a future where humans and AI safely coexist.
+            I plan to return in Spring 2026 to continue studying AI & Decision Making. I'm interested in helping shape a future where humans and AI safely coexist.
           </p>
           <p className='mt-4 max-w-md'>
-            You can find some of the things I've built <span className='underline'><a href='/portfolio' target='_blank'>here.</a></span>
+            You can find some of the things I've built <span className='underline'><a href='/portfolio'>here.</a></span>
           </p>
           <p className='mt-4 max-w-md'>
             Recently, I created
