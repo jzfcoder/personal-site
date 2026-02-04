@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const firaHeader = Fira_Code({
   variable: "--fira-header",
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`antialiased ${firaHeader.variable} ${firaBody.variable}`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
