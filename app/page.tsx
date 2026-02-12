@@ -46,11 +46,10 @@ export default function Home() {
         <div className='text-left'>
           <h1 className='hidden md:block text-5xl'>Jeremy Flint</h1>
           <p className='mt-4 max-w-md'>
-            I'm on leave as a sophomore at MIT, currently building agents and benchmarking infrastructure
-            at <span className='underline'><a href='https://tryshortcut.ai' target='_blank'>Shortcut</a></span> by <span className='underline'><a href='https://fundamentalresearchlabs.ai' target='_blank'>Fundamental Research.</a></span>
+            I'm a sophomore at MIT majoring in AI & Decision Making. I'm interested in benchmarking and evaluation for AI safety — building better ways to measure what AI systems can and can't do reliably.
           </p>
           <p className='mt-4 max-w-md'>
-            I plan to return in Spring 2026 to continue studying AI & Decision Making. I'm interested in helping shape a future where humans and AI safely coexist.
+            This past fall, I was on leave building agents at <span className='underline'><a href='https://tryshortcut.ai' target='_blank'>Shortcut</a></span> by <span className='underline'><a href='https://fundamentalresearchlabs.ai' target='_blank'>Fundamental Research.</a></span>
           </p>
           <p className='mt-4 max-w-md'>
             You can find some of the things I've built <span className='underline'><a href='/portfolio'>here.</a></span>
