@@ -10,6 +10,22 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: 'JEPA-Atari',
+    date: new Date('02/01/2026'),
+    caption: 'self-supervised pretraining for robust RL agents',
+    description: `Investigating whether JEPA (Joint Embedding Predictive Architecture) self-supervised pretraining makes RL agents more robust to visual perturbations in Atari Breakout.
+
+Key findings:
+• JEPA-pretrained encoders retain 76% performance under heavy visual corruption vs. 61% for standard CNNs
+• Robustness comes from the pretraining objective, not the ViT architecture — a randomly initialized ViT collapses to 27% retention
+• Fine-tuning closes 47% of the clean-performance gap while preserving robustness
+• JEPA outperforms pixel-reconstruction autoencoders in both frozen and fine-tuned settings
+
+Tech Stack: PyTorch, Gymnasium/ALE, Vision Transformers, PPO (CleanRL-style)`,
+    githubUrl: 'https://github.com/jzfcoder/atari-jepa',
+    pdfUrl: undefined,
+  },
+  {
     title: 'Flashback (HackMIT 2025)',
     date: new Date('09/14/2025'),
     caption: 'privacy-first memory capture for smart glasses',
