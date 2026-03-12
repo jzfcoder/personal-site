@@ -57,6 +57,20 @@ Tech Stack: TypeScript, Next.js, Tailwind CSS`,
     pdfUrl: undefined,
   },
   {
+    title: 'Clearify',
+    date: new Date('06/01/2024'),
+    caption: 'data-driven skincare from wearable sensors',
+    description: `A full-stack skincare app built through Buildspace.so that uses wearable accelerometer data to track and predict skin irritation triggers.
+
+• Built model to identify high-influence factors with 95% confidence on 70 datapoints (a month of data)
+• Trained 80% accurate PyTorch model to detect itching from wearable accelerometer samples
+• Deployed and distributed full-stack server and mobile app
+
+Tech Stack: PostgreSQL, Node.js, Express.js, React Native, PyTorch`,
+    githubUrl: undefined,
+    pdfUrl: undefined,
+  },
+  {
     title: 'DreamCatcher',
     date: new Date('01/01/2025'),
     caption: 'sleep talking recorder',

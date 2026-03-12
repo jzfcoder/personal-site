@@ -55,11 +55,6 @@ export default function Home() {
             You can find some of the things I've built <span className='underline'><a href='/portfolio'>here.</a></span>
           </p>
           <p className='mt-4 max-w-md'>
-            Recently, I created
-            an <span className='underline'><a href='https://www.getclearify.com' target='_blank'>AI-powered skincare app</a></span> and
-            joined <span className='underline'><a href='https://www.linkedin.com/company/stitch-ai/' target='_blank'>Stitch</a></span> to design a graph-based LLM interface.
-          </p>
-          <p className='mt-4 max-w-md'>
             I also enjoy <span className='underline'><a href='https://mitathletics.com/sports/mens-swimming-and-diving' target='_blank'>swimming</a></span> and
             skateboarding in my spare time.
           </p>
