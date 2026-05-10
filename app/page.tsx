@@ -26,7 +26,7 @@ export default function Home() {
           </div>
           {/* Mobile: title + socials next to image */}
           <div className='flex flex-col md:hidden'>
-            <h1 className='text-2xl'>Jeremy Flint</h1>
+            <p className='text-2xl'>Jeremy Flint</p>
             <div className='flex space-x-4 mt-2'>
               <a href='https://x.com/zflintj' target='_blank' rel='noopener noreferrer'>
                 <FaXTwitter className='text-xl' />
@@ -46,7 +46,7 @@ export default function Home() {
         <div className='text-left'>
           <h1 className='hidden md:block text-5xl'>Jeremy Flint</h1>
           <p className='mt-4 max-w-md'>
-            I'm a sophomore at MIT majoring in AI & Decision Making. I'm interested in benchmarking and evaluation for AI safety — building better ways to measure what AI systems can and can't do reliably.
+            I'm a sophomore at MIT majoring in AI & Decision Making. I'm interested in building and evaluating safe, capable multi-agent systems.
           </p>
           <p className='mt-4 max-w-md'>
             This past fall, I was on leave building agents at <span className='underline'><a href='https://tryshortcut.ai' target='_blank'>Shortcut</a></span> by <span className='underline'><a href='https://fundamentalresearchlabs.ai' target='_blank'>Fundamental Research.</a></span>

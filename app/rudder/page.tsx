@@ -1,4 +1,25 @@
+import type { Metadata } from "next";
 import AsciiBackground from "../AsciiBackground";
+
+const description =
+  "rudder catches the moment an LLM agent confabulates and steers around it.";
+
+export const metadata: Metadata = {
+  title: "rudder",
+  description,
+  alternates: { canonical: "/rudder" },
+  openGraph: {
+    title: "rudder · Jeremy Flint",
+    description,
+    url: "/rudder",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "rudder · Jeremy Flint",
+    description,
+  },
+};
 
 export default function Rudder() {
   return (
